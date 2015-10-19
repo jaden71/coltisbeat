@@ -6,7 +6,10 @@
 $gray-medium-light: #eaeaea;
 
 /* universal */
-
+.myBackground {
+  background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
 body {
   padding-top: 80px;
   background-repeat:no-repeat;
@@ -60,13 +63,11 @@ p {
 /* header */
 
 #logo {
-  
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
-  text-shadow: 0px 2px 3px #555;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -78,11 +79,42 @@ p {
 
 /* footer */
 
-footer {
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+  
+  /* Home footer */
+  
+.homefooter {
     position: absolute;
     padding: 1rem;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     height: 20px;
     width: 100%;

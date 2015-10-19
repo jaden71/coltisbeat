@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= favicon_link_tag %>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track' => true %>
@@ -12,7 +13,10 @@
     <%= render 'layouts/header' %>
       <div class="container">
       <%= yield %>
-      <%= render 'layouts/footer' %>
+      <%= render 'layouts/footer' unless current_page?('/') %>
+      <%= render 'layouts/homefooter' if current_page?('/') %>
+     
+      
     </div>
   </body>
 </html>
