@@ -8,7 +8,9 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 section {
@@ -23,6 +25,7 @@ textarea {
   text-align: center;
   h1 {
     margin-bottom: 10px;
+    
   }
 }
 
@@ -57,10 +60,12 @@ p {
 /* header */
 
 #logo {
+  
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
+  text-shadow: 0px 2px 3px #555;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -74,18 +79,23 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    
   a {
-    color: $gray;
+    color: white;
     &:hover {
       color: $gray-darker;
     }
   }
   small {
     float: left;
+    color: white;
   }
   ul {
     float: right;
