@@ -1,1 +1,3 @@
-Colt is beat!
+Coltisbeat
+
+The source code for the website coltisbeat.tk, a Colt-themed message board. 
