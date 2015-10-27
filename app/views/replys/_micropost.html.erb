@@ -1,0 +1,8 @@
+<li id="reply-<%= reply.id %>">
+  <%= link_to gravatar_for(reply.micropost.user, size: 50), reply.micropost.user %>
+  <span class="user"><%= link_to reply.micropost.user.name, reply.micropost.user %></span>
+  <span class="content"><%= reply.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(reply.created_at) %> ago.
+  </span>
+</li>

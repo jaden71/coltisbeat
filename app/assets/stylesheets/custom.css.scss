@@ -274,13 +274,19 @@ input {
 
 .users {
   list-style: none;
-  margin: 0;
+  margin-bottom:20px;
+  overflow:hidden;
   li {
     overflow: auto;
     padding: 10px 0;
+    padding-left: 10px;
     border-bottom: 1px solid $gray-lighter;
+    border-right: 1px solid $gray-lighter;
+    width:25%;
+    float:left;
   }
 }
+
 /* microposts */
 
 .microposts {

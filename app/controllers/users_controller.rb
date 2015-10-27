@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 6)
+    @microposts = @user.microposts.paginate(:page => params[:page], :per_page => 10)
   end
   def destroy
     User.find(params[:id]).destroy
@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
   def index
-    @users = User.paginate(:page => params[:page], :per_page => 6)
+    @users = User.paginate(:page => params[:page], :per_page => 16)
   end
 
   def new
